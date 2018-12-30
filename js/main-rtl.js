@@ -3,7 +3,8 @@ $(document).ready(function(){
         items : 1,
         nav : true,
         dots:true,
-        rtl:true
+        rtl:true,
+        loop:true
     });
   });
 
