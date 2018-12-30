@@ -33,5 +33,16 @@ body {
   .footer .news-letter form .row-footer label {
     margin-right: 0;
     margin-left: 15px; } }
+.application .application-inner form button strong {
+  left: 0;
+  right: auto; }
+
+.application .application-inner form button:hover strong {
+  right: auto;
+  left: -40px; }
+
+.application .application-inner form button:hover {
+  right: -20px;
+  left: auto; }
 
 /*# sourceMappingURL=style-rtl.css.map */

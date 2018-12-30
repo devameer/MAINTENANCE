@@ -9,9 +9,8 @@
       color: #fff;
     }
     .navbar-brand {
-      img{
-        height: 50px;
-      }
+      color: #fff;
+      font-weight: bold;
       
     }
     .navbar-nav {
@@ -37,7 +36,7 @@
             height: 4px;
             content: "";
             background: #fff;
-            bottom: -6px;
+            bottom: -2px;
             left: 0;
             transition: all 0.4s
 
@@ -53,6 +52,9 @@
       width: 100%;
       z-index: 1000000;
       box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+      .navbar-brand {
+        color: #333
+      }
       .navbar-toggler svg{
         color: #000;
       }

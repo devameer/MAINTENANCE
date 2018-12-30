@@ -4,7 +4,9 @@ $(document).ready(function(){
         nav : true,
         dots:true,
         rtl:true,
-        loop:true
+        loop:true,
+        
+        autoplay:true
     });
   });
 
