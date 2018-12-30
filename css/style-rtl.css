@@ -45,4 +45,7 @@ body {
   right: -20px;
   left: auto; }
 
+.header nav .navbar-nav .nav-link {
+  text-align: right; }
+
 /*# sourceMappingURL=style-rtl.css.map */
