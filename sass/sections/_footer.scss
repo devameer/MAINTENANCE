@@ -1,0 +1,102 @@
+/* Start footer Section Styles */
+.footer {
+  background-image: linear-gradient(-253deg, #4f6dcd 0%, #7030bc 100%);
+  padding: 70px 0 30px;
+  .news-letter {
+    form {
+      .row-footer {
+        display: flex;
+        max-width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        .news-col {
+          display: flex;
+        }
+        label {
+          color: #fff;
+          margin-right: 40px;
+          font-size: 18px;
+          text-transform: capitalize;
+        }
+        .input-col {
+          flex-grow: 1;
+          display: flex;
+        }
+        input {
+          width: calc(100% - 100px);
+          border-radius: 0;
+        }
+        button {
+          background: #6433cd;
+          color: #fff;
+          font-size: 15px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24);
+          border-radius: 0;
+          transition: all 0.4s;
+          &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+            transform: scale(1.01);
+          }
+        }
+      }
+    }
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    a {
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+  }
+  h5 {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .footer .news-letter form .row-footer{
+        max-width: 100%;
+    }
+
+ }
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .footer .news-letter form .row-footer{
+        max-width: 100%;
+    }
+
+    .footer .news-letter form .row-footer label{
+        margin-right: 15px;
+        font-size: 15px;
+    }
+
+  
+
+  }
+  @media (max-width: 575.98px) { 
+    .footer .news-letter form .row-footer{
+        display: block;
+        max-width: 90%;
+
+    }
+    .sec-title{
+        font-size: 30px;
+    }
+
+    .sec-desc{
+        font-size: 14px;
+    }
+    
+ }
+
+/* End footer Section Styles */

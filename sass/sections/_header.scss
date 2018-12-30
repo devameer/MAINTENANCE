@@ -1,0 +1,169 @@
+/* Start Header Section Styles */
+.header {
+  background-image: linear-gradient(-253deg, #4f6dcd 0%, #7030bc 100%);
+  nav {
+    border-bottom: 1px solid #c0b8e7;
+    padding-bottom: 0;
+    transition: all 0.5s;
+    .navbar-toggler svg{
+      color: #fff;
+    }
+    .navbar-brand {
+      img{
+        height: 50px;
+      }
+      
+    }
+    .navbar-nav {
+      .nav-link {
+        color: #fff;
+        padding: 20px 0 10px;
+        margin: 0 20px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+     
+      }
+      .nav-item{
+        position: relative;
+        transition: all 0.4s;
+
+        &.active {
+          &:after {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            content: "";
+            background: #fff;
+            bottom: -6px;
+            left: 0;
+            transition: all 0.4s
+
+          }
+        }
+      }
+    }
+    &.fixed-menu{
+      position: fixed;
+      top: 0;
+      background: #fff;
+      left: 0;
+      width: 100%;
+      z-index: 1000000;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+      .navbar-toggler svg{
+        color: #000;
+      }
+      .navbar-nav{
+        .nav-link {
+          color: #000;
+        
+        }
+        .nav-item{
+          &.active {
+            &:after {
+              transition: all 0.4s;
+
+              background: #000;
+             ;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-slider {
+    position: relative;
+    .main-slider-inner {
+      padding: 100px 0 30px;
+    }
+    &:after {
+      content: "";
+      background: url(../images/sliderbg.png);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.03;
+    }
+    .slide-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h4 {
+        color: #fff;
+        max-width: 85%;
+
+        margin-bottom: 25px;
+      }
+      p {
+        color: #fff;
+
+        font-size: 18px;
+      }
+      a {
+        background: #fff;
+        padding: 5px;
+        text-align: center;
+        width: 200px;
+        border-radius: none;
+        transition: all 0.5s;
+        &:hover{
+          background: var(--main-color);
+          color: #fff;
+          border: 2px solid #fff
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      button {
+        width: 30px;
+        height: 70px;
+        background-color: #ffffff;
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+    .owl-dots{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        button{
+            background-color: #b2b2b2;
+            width: 10px;
+            height: 10px;
+            opacity: 0.7;
+            border-radius: 50%;
+            margin: 0px  5px;
+            outline: 0;
+            &.active{
+                background: #fff;
+                opacity: 1;
+            }
+        }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+   .header .main-slider .slide-text h4{
+  font-size: 20px;
+} 
+.header .main-slider .slide-text p{
+  font-size: 15px;
+}
+
+}
+/* End Header Section Styles */
